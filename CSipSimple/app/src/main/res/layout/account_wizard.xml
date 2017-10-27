@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_layout"
+    android:layout_width="fill_parent"
+     android:background="#FFFFFF"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        android:orientation="vertical" >
+        <ImageView
+            android:id="@+id/splash"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/splash" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-5dp"
+           
+            android:src="@drawable/adore22"
+            android:visibility="gone"/>
+
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+             android:layout_marginTop="-30dip"
+             android:layout_marginLeft="32dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SIP Server IP"
+            android:textColor="#696969"
+            android:layout_marginLeft="32dp"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+        
+        <EditText
+            android:id="@+id/acc_sip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:autoText="false"
+            android:background="@drawable/sip_bar"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="40dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Proxy(Optional)"
+            android:textColor="#696969"
+             android:layout_marginLeft="32dp"
+             android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/acc_proxy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:autoText="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/sip_bar"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingLeft="40dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username" 
+             android:textColor="#696969" 
+             android:layout_marginTop="5dp"
+              android:layout_marginLeft="32dp"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/acc_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:autoText="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/user_bar"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="40dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+             android:textColor="#696969" 
+             android:layout_marginTop="5dp"
+              android:layout_marginLeft="32dp"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/acc_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:autoText="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/password_bar"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="40dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/acc_login"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_img"
+                android:onClick="onClick"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/acc_clear"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/clear_img"
+                android:onClick="onClick"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

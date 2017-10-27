@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="acct_inactive">Unregistered</string>
+    <string name="acct_unregistered">Not Registered</string>
+    <string name="acct_expired">Registration Expired</string>
+    <string name="acct_registering">Registering…</string>
+    <string name="acct_registered">Registered</string>
+    <string name="acct_regerror">Registration Error</string>
+    <string name="acct_regfailed">Register Failed - Check your Configuration Settings</string>
+
+</resources>

@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/top_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+   <ImageView
+            android:id="@+id/adoreimg"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"          
+            android:layout_marginTop="-5dp"
+            android:src="@drawable/adore22" />
+   
+     <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/adoreimg" android:visibility="gone"
+      />
+    
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="United Kingdom"
+       
+        android:textColor="#33B5E5"
+          android:layout_marginTop="20dp"
+        android:layout_below="@+id/adoreimg"
+        android:layout_toRightOf="@+id/flag"
+        android:id="@+id/name"
+        android:layout_gravity="center_vertical" />
+       
+     
+     <EditText
+        android:id="@+id/edtCountryCode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textColor="#026D95"
+        android:background="@drawable/sip_bar1"
+        android:textColorHint="#026D95"
+        android:layout_below="@+id/flag"
+        android:hint="Code" android:visibility="gone"/>
+
+       <EditText
+        android:id="@+id/edtCountryyCode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+         android:focusable="false"
+        android:textColor="#026D95"
+        android:background="@drawable/sip_bar1"
+        android:textColorHint="#026D95"
+        android:layout_below="@+id/flag"
+        android:hint="+44" />
+     
+     
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/edtCountryyCode"
+        android:background="@drawable/sip_bar"
+        android:gravity="center"
+        android:hint="ex:7xxxx"
+        android:inputType="phone"
+        android:textColor="#026D95"
+        android:textColorHint="#026D95"
+        android:textCursorDrawable="@drawable/cursor" />
+    
+    <Button
+        android:id="@+id/btnValidate"
+         android:layout_marginTop="85dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPhoneNumber"
+        android:layout_centerInParent="true"
+        android:background="#00a5c2"
+        android:textSize="25dp"
+        android:text="Register"/>
+     
+    <ListView 
+        android:id="@+id/listView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp" android:visibility="gone" >
+        
+        
+    </ListView>
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/edtCountryyCode"
+        android:layout_below="@+id/adoreimg"
+        android:src="@drawable/unitedkingdom" />
+
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCountryyCode"
+        android:layout_below="@+id/edtCountryyCode"
+        android:text="*Terms and Condition."
+        android:onClick="onClick"
+         android:textColor="#00a5c2"/>
+        
+    
+     <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/flag"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="8dp"
+          android:padding="20dp"  
+  
+         android:paddingRight="10dp"
+          android:layout_gravity="center"
+        android:checked="true"
+        
+        android:longClickable="false" />
+ 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView1"
+        android:text="I agree to the Terms and Conditions"
+        android:textColor="#00a5c2" /> 
+</RelativeLayout>

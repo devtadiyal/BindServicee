@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.mobilesoftphone4"
+        minSdkVersion 23
+        targetSdkVersion 23
+    }
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile project(':sherlok')
+    compile 'com.android.support.constraint:constraint-layout:+'
+    configurations.compile.exclude module: 'support-v4'
+    compile 'com.google.firebase:firebase-messaging:9.6.0'
+    compile files('src/main/jniLibs/org-apache-commons-codec.jar')
+    compile files('src/main/jniLibs/volley.jar')
+}
+
+//apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.gms.google-services'

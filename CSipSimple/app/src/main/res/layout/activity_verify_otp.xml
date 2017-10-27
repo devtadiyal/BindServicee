@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     >
+
+     <TextView
+      android:id="@+id/otp_info"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:capitalize="characters"
+      android:text="otp info"
+      
+      android:textColor="#026D95"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:textSize="20dp"/>
+     
+     <TextView
+      android:id="@+id/otp_timmer"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:capitalize="characters"
+      android:singleLine="true"
+      android:textColor="#026D95"
+      android:text="otp info"
+      
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="30dp"
+      android:textSize="17dp"
+      
+      android:layout_below="@+id/otp_info"/>
+     
+    <EditText
+        android:id="@+id/otp_code"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+       android:gravity="center"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:textColor="#026D95"
+        android:textColorHint="#026D95"
+        android:textCursorDrawable="@drawable/cursor" 
+         android:background="@drawable/sip_bar"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp_timmer"
+        android:layout_centerInParent="true"
+        android:hint="Enter OTP"/>
+    
+    <Button
+        android:id="@+id/btnCheckOtp"
+        android:layout_marginLeft="45dp"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/otp_info"
+        android:layout_alignRight="@+id/otp_code"
+        android:layout_below="@+id/otp_code"
+        android:layout_centerVertical="true"
+        android:background="#00a5c2"
+          android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Continue" />
+     
+    <Button
+        android:id="@+id/reSendOtp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="43dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCheckOtp"
+        android:layout_alignRight="@+id/otp_timmer"
+        android:layout_below="@+id/btnCheckOtp"
+        android:layout_centerVertical="true"
+        android:background="#00a5c2"
+          android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:text="ReSend OTP" />
+
+</RelativeLayout>
